@@ -10,9 +10,15 @@
 				</tr>
 			</thead>
 			<tbody>
+				<% @books.each do |book| %>
 				<tr>
-					<td>data</td>
+					<td><%= book.title %></td>
+					<td><%= book.body %></td>
+					<td><a href="#">show</a></td>
+					<td><a href="#">update</a></td>
+					<td><a href="#">delete</a></td>
 				</tr>
+				<% end %>
 			</tbody>
 		</table>
 	</div>
