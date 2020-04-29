@@ -1,6 +1,6 @@
 <div class="main">
-	<div class="lists">
-		<h2 class="list-title">Books</h2>
+	<div class="lists-wrapper">
+		<h2 class="main-title">Books</h2>
 		<table>
 			<thead class="table-head">
 				<tr>
@@ -21,5 +21,15 @@
 				<% end %>
 			</tbody>
 		</table>
+	</div>
+	<div class="post-wrapper">
+		<h2 class="main-title">New Book</h2>
+		<%= form_with(model: @book, local: true) do |form| %>
+			<%= form.label :title %>
+			<%= form.text_field :title %>
+			<%= form.label :body %>
+			<%= form.text_area :body %>
+			<%= form.submit "Create Book"%>
+		<% end %>
 	</div>
 </div>
