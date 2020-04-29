@@ -4,6 +4,10 @@ class BooksController < ApplicationController
   	@book = Book.new
   end
 
+  def show
+  	@book = Book.find(params[:id])
+  end
+
   def create
   	book = Book.new(book_params)
     book.save
