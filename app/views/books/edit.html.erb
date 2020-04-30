@@ -1,12 +1,21 @@
-<h2>Editing Book</h2>
+<div class="container">
+	<h1>Editing Book</h1>
 
-<%= form_with(model: @book, local: true) do |form| %>
-	<%= form.label :title %>
-	<%= form.text_field :title %>
-	<%= form.label :body %>
-	<%= form.text_area :body %>
-	<%= form.submit "Update Book" %>
-<% end %>
+	<%= form_with(model: @book, local: true) do |form| %>
+		<div class="form-field">
+			<%= form.label :title %>
+			<%= form.text_field :title %>
+		</div>
+		<div class="form-field">
+			<%= form.label :body %>
+			<%= form.text_area :body %>
+		</div>
+		<div class="form-btn">
+			<%= form.submit "Update Book" %>
+		</div>
+	<% end %>
 
-<%= link_to "Show", book_path(@book) %>
-<%= link_to "Back", books_path %>
+	<%= link_to "Show", book_path(@book) %>
+	|
+	<%= link_to "Back", books_path %>
+</div>

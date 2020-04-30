@@ -1,7 +1,15 @@
-<p><strong>Title:</strong></p>
-<%= @book.title %>
-<p><strong>Body:</strong></p>
-<%= @book.body %>
-
-<%= link_to "Edit", edit_book_path(@book) %>
-<%= link_to "Back", books_path %>
+<div class="container">
+	<div class="content-wrapper">
+		<p>
+			<strong>Title:</strong>
+			<%= @book.title %>
+		</p>
+		<p>
+			<strong>Body:</strong>
+			<%= @book.body %>
+		</p>
+	</div>
+	<%= link_to "Edit", edit_book_path(@book) %>
+	|
+	<%= link_to "Back", books_path %>
+</div>
