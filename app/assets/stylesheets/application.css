@@ -39,6 +39,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    font-family: verdana, arial, helvetica, sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -66,7 +67,14 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    color: #666;
 }
+
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 
 /* change colours to suit your needs */
 ins {
@@ -101,7 +109,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;  
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -110,3 +118,36 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+/* common */
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top {
+    margin-top: 30px;
+}
+
+.top-title {
+    font-size: 25px;
+    padding: ;
+}
+
+.top-text {
+    font-size: 13px;
+    line-height: 3em;
+    padding: 20px 0 20px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
